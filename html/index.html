@@ -94,7 +94,31 @@ $(function() {
 <div class="line">            Console.WriteLine(<span class="stringliteral">&quot;Getting my entry with key {0} from the cache. Result value is: {1}&quot;</span>, myKey, result);</div>
 </div><!-- fragment --></li>
 </ol>
-<p >A full working example with a basic put/get session: </p><div class="fragment"></div><!-- fragment --> </div></div><!-- PageDoc -->
+<p >A full working example with a basic put/get session: </p><div class="fragment"><div class="line"><span class="keyword">using</span> System;</div>
+<div class="line"><span class="keyword">using</span> System.Threading.Tasks;</div>
+<div class="line"><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_infinispan.html">Infinispan</a>.<a class="code hl_namespace" href="namespace_infinispan_1_1_hotrod.html">Hotrod</a>.<a class="code hl_namespace" href="namespace_infinispan_1_1_hotrod_1_1_core.html">Core</a>;</div>
+<div class="line"><span class="keyword">namespace </span>Infinispan.Hotrod.Application</div>
+<div class="line">{</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">class </span>Program</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">static</span> async Task Main(<span class="keywordtype">string</span>[] args)</div>
+<div class="line">        {</div>
+<div class="line">            var myKey = <span class="stringliteral">&quot;myKey&quot;</span>;</div>
+<div class="line">            InfinispanDG dg = <span class="keyword">new</span> InfinispanDG();</div>
+<div class="line">            <span class="comment">// Use a non-authenticated non-encrypted cluster;</span></div>
+<div class="line">            dg.AddHost(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
+<div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> StringMarshaller(), <span class="keyword">new</span> StringMarshaller(), <span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="line">            await cache.Put(myKey, <span class="stringliteral">&quot;some value&quot;</span>);</div>
+<div class="line">            <span class="keywordtype">string</span> result = await cache.Get(myKey);</div>
+<div class="line">            Console.WriteLine(<span class="stringliteral">&quot;Getting my entry with key {0} from the cache. Result value is: {1}&quot;</span>, myKey, result);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespace_infinispan_1_1_hotrod_1_1_core_html"><div class="ttname"><a href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
+<div class="ttc" id="anamespace_infinispan_1_1_hotrod_html"><div class="ttname"><a href="namespace_infinispan_1_1_hotrod.html">Infinispan.Hotrod</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
+<div class="ttc" id="anamespace_infinispan_html"><div class="ttname"><a href="namespace_infinispan.html">Infinispan</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
