@@ -12,3 +12,6 @@ The main use case is the following:
 \snippet /Program.cs Create a cache
 4. Write application code
 \snippet /Program.cs Application code
+
+A full working example with a basic put/get session:
+\include Infinispan.Hotrod.Application.cs
