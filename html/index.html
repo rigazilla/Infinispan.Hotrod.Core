@@ -64,16 +64,35 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Infinispan.Hotrod.Core </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_docs_README"></a> This package allows the user application to perform operation on a remote Infinispan cluster via the Hot Rod protocol.</p>
+<div class="textblock"><p ><a class="anchor" id="md_docs_README"></a> This package allows the user application to perform operation on a remote <a class="el" href="namespace_infinispan.html">Infinispan</a> cluster via the Hot Rod protocol.</p>
 <p >The main use case is the following:</p>
 <ol type="1">
-<li>import this package in the project description <div class="fragment"> </div><!-- fragment --></li>
-<li>Create a cluster <div class="fragment"></div><!-- fragment --></li>
-<li>Create a cache <div class="fragment"></div><!-- fragment --></li>
-<li>Write application code <div class="fragment"></div><!-- fragment --> </li>
+<li>import this package in the project description <div class="fragment"><div class="line">&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;</div>
+<div class="line"> </div>
+<div class="line">  &lt;PropertyGroup&gt;</div>
+<div class="line">    &lt;OutputType&gt;Exe&lt;/OutputType&gt;</div>
+<div class="line">    &lt;TargetFramework&gt;net5.0&lt;/TargetFramework&gt;</div>
+<div class="line">  &lt;/PropertyGroup&gt;</div>
+<div class="line"> </div>
+<div class="line">  &lt;ItemGroup&gt;</div>
+<div class="line">    &lt;PackageReference Include=&quot;Infinispan.Hotrod.Core&quot; Version=&quot;*-*&quot;/&gt;</div>
+<div class="line">  &lt;/ItemGroup&gt;</div>
+<div class="line"> </div>
+<div class="line">&lt;/Project&gt;</div>
+</div><!-- fragment --></li>
+<li>Create a cluster <div class="fragment"><div class="line">            InfinispanDG dg = <span class="keyword">new</span> InfinispanDG();</div>
+<div class="line">            <span class="comment">// Use a non-authenticated non-encrypted cluster;</span></div>
+<div class="line">            dg.AddHost(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
+</div><!-- fragment --></li>
+<li>Create a cache <div class="fragment"><div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> StringMarshaller(), <span class="keyword">new</span> StringMarshaller(), <span class="stringliteral">&quot;default&quot;</span>);</div>
+</div><!-- fragment --></li>
+<li>Write application code <div class="fragment"><div class="line">            await cache.Put(myKey, <span class="stringliteral">&quot;some value&quot;</span>);</div>
+<div class="line">            <span class="keywordtype">string</span> result = await cache.Get(myKey);</div>
+<div class="line">            Console.WriteLine(<span class="stringliteral">&quot;Getting my entry with key {0} from the cache. Result value is: {1}&quot;</span>, myKey, result);</div>
+</div><!-- fragment --> </li>
 </ol>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
