@@ -67,7 +67,7 @@ $(function() {
   <div class="headertitle"><div class="title"># <a class="el" href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p >This package allows the user application to perform operation on a remote <a class="el" href="namespace_infinispan.html">Infinispan</a> cluster via the Hot Rod protocol.</p>
+<div class="textblock"><p >This package allows the user application to perform operation on a remote Infinispan cluster via the Hotrod protocol.</p>
 <p >The main use case is the following:</p>
 <ol type="1">
 <li>import this package in the project description <div class="fragment"><div class="line">&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;</div>
@@ -90,8 +90,8 @@ $(function() {
 <div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g_html_ae188b34c84c6cff2d4ba6dbbcaf97db1"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae188b34c84c6cff2d4ba6dbbcaf97db1">Infinispan.Hotrod.Core.InfinispanDG.AddHost</a></div><div class="ttdeci">InfinispanHost AddHost(string host, int port=11222)</div><div class="ttdoc">Add a cluster node to the initial list of nodes for the DEFAULT_CLUSTER.</div><div class="ttdef"><b>Definition:</b> InfinispanDG.cs:79</div></div>
 </div><!-- fragment --> The <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html" title="InfinispanDG class describes an Infinispan Cluster and is the main API entry point.">InfinispanDG</a> class allows several cluster configuration: tls, authentication, nodes address setup, clusters for failover. See below.</li>
 <li>Create a cache <div class="fragment"><div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="stringliteral">&quot;default&quot;</span>);</div>
-<div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller_html"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">Infinispan.Hotrod.Core.StringMarshaller</a></div><div class="ttdoc">An untility Marshaller that works on strings using ASCII encoding by default</div><div class="ttdef"><b>Definition:</b> Marshaller.cs:24</div></div>
-</div><!-- fragment --></li>
+<div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller_html"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">Infinispan.Hotrod.Core.StringMarshaller</a></div><div class="ttdoc">An untility Marshaller that works on strings using ASCII encoding by default</div><div class="ttdef"><b>Definition:</b> Marshaller.cs:27</div></div>
+</div><!-- fragment --> <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html">Cache</a> is the main object to execute operation on remote cluster. To create a cache object a marshaller for both key and value must be provided. See <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_marshaller.html" title="Marshaller knows how to convert a type T into byte[] and viceversa.">Marshaller</a>.</li>
 <li>Write application code <div class="fragment"><div class="line">            await cache.Put(myKey, <span class="stringliteral">&quot;some value&quot;</span>);</div>
 <div class="line">            <span class="keywordtype">string</span> result = await cache.Get(myKey);</div>
 <div class="line">            Console.WriteLine(<span class="stringliteral">&quot;Getting my entry with key {0} from the cache. Result value is: {1}&quot;</span>, myKey, result);</div>

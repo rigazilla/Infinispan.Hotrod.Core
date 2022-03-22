@@ -89,7 +89,7 @@ abstract T&#160;</td><td class="memItemRight" valign="bottom"><b>unmarshall</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_marshaller.html" title="Marshaller knows how to convert a type T into byte[] and viceversa.">Marshaller</a> knows how to convert a type T into byte[] and viceversa. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p >Before being sent in an hotrod request, keys and values must be turned into byte[]. In the other way byte[], need to be turned back into object when an hotrod response is received. Marshallers for key and value must be provided by the user at the cache creation. See <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#aaaf47ec0d17b4f9137c098e6648c93bf" title="Returns a proxy to a remote cache on the server">InfinispanDG.NewCache&lt;K,V&gt;()</a>. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type handled by the <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_marshaller.html" title="Marshaller knows how to convert a type T into byte[] and viceversa.">Marshaller</a></td></tr>
   </table>
