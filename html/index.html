@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Infinispan.Hotrod.Core: Infinispan.Hotrod.Core</title>
+<title>Infinispan.Hotrod.Core: # Infinispan.Hotrod.Core</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,10 +64,10 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title"><a class="el" href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a> </div></div>
+  <div class="headertitle"><div class="title"># <a class="el" href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a> </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_docs_README"></a> This package allows the user application to perform operation on a remote <a class="el" href="namespace_infinispan.html">Infinispan</a> cluster via the Hot Rod protocol.</p>
+<div class="textblock"><p >This package allows the user application to perform operation on a remote <a class="el" href="namespace_infinispan.html">Infinispan</a> cluster via the Hot Rod protocol.</p>
 <p >The main use case is the following:</p>
 <ol type="1">
 <li>import this package in the project description <div class="fragment"><div class="line">&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;</div>
@@ -83,11 +83,14 @@ $(function() {
 <div class="line"> </div>
 <div class="line">&lt;/Project&gt;</div>
 </div><!-- fragment --></li>
-<li>Create a cluster <div class="fragment"><div class="line">            InfinispanDG dg = <span class="keyword">new</span> InfinispanDG();</div>
+<li>Create a cluster <div class="fragment"><div class="line">            <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html">InfinispanDG</a> dg = <span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html">InfinispanDG</a>();</div>
 <div class="line">            <span class="comment">// Use a non-authenticated non-encrypted cluster;</span></div>
-<div class="line">            dg.AddHost(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
-</div><!-- fragment --></li>
-<li>Create a cache <div class="fragment"><div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> StringMarshaller(), <span class="keyword">new</span> StringMarshaller(), <span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="line">            dg.<a class="code hl_function" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae188b34c84c6cff2d4ba6dbbcaf97db1">AddHost</a>(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
+<div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g_html"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html">Infinispan.Hotrod.Core.InfinispanDG</a></div><div class="ttdoc">InfinispanDG class describes an Infinispan Cluster and is the main API entry point.</div><div class="ttdef"><b>Definition:</b> InfinispanDG.cs:18</div></div>
+<div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g_html_ae188b34c84c6cff2d4ba6dbbcaf97db1"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae188b34c84c6cff2d4ba6dbbcaf97db1">Infinispan.Hotrod.Core.InfinispanDG.AddHost</a></div><div class="ttdeci">InfinispanHost AddHost(string host, int port=11222)</div><div class="ttdoc">Add a cluster node to the initial list of nodes for the DEFAULT_CLUSTER.</div><div class="ttdef"><b>Definition:</b> InfinispanDG.cs:79</div></div>
+</div><!-- fragment --> The <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html" title="InfinispanDG class describes an Infinispan Cluster and is the main API entry point.">InfinispanDG</a> class allows several cluster configuration: tls, authentication, nodes address setup, clusters for failover. See below.</li>
+<li>Create a cache <div class="fragment"><div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="ttc" id="aclass_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller_html"><div class="ttname"><a href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">Infinispan.Hotrod.Core.StringMarshaller</a></div><div class="ttdoc">An untility Marshaller that works on strings using ASCII encoding by default</div><div class="ttdef"><b>Definition:</b> Marshaller.cs:24</div></div>
 </div><!-- fragment --></li>
 <li>Write application code <div class="fragment"><div class="line">            await cache.Put(myKey, <span class="stringliteral">&quot;some value&quot;</span>);</div>
 <div class="line">            <span class="keywordtype">string</span> result = await cache.Get(myKey);</div>
@@ -105,10 +108,10 @@ $(function() {
 <div class="line">        <span class="keyword">static</span> async Task Main(<span class="keywordtype">string</span>[] args)</div>
 <div class="line">        {</div>
 <div class="line">            var myKey = <span class="stringliteral">&quot;myKey&quot;</span>;</div>
-<div class="line">            InfinispanDG dg = <span class="keyword">new</span> InfinispanDG();</div>
+<div class="line">            <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html">InfinispanDG</a> dg = <span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html">InfinispanDG</a>();</div>
 <div class="line">            <span class="comment">// Use a non-authenticated non-encrypted cluster;</span></div>
-<div class="line">            dg.AddHost(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
-<div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> StringMarshaller(), <span class="keyword">new</span> StringMarshaller(), <span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="line">            dg.<a class="code hl_function" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae188b34c84c6cff2d4ba6dbbcaf97db1">AddHost</a>(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, 11222);</div>
+<div class="line">            var cache = dg.NewCache&lt;string, <span class="keywordtype">string</span>&gt;(<span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="keyword">new</span> <a class="code hl_class" href="class_infinispan_1_1_hotrod_1_1_core_1_1_string_marshaller.html">StringMarshaller</a>(), <span class="stringliteral">&quot;default&quot;</span>);</div>
 <div class="line">            await cache.Put(myKey, <span class="stringliteral">&quot;some value&quot;</span>);</div>
 <div class="line">            <span class="keywordtype">string</span> result = await cache.Get(myKey);</div>
 <div class="line">            Console.WriteLine(<span class="stringliteral">&quot;Getting my entry with key {0} from the cache. Result value is: {1}&quot;</span>, myKey, result);</div>
@@ -118,7 +121,22 @@ $(function() {
 <div class="ttc" id="anamespace_infinispan_1_1_hotrod_1_1_core_html"><div class="ttname"><a href="namespace_infinispan_1_1_hotrod_1_1_core.html">Infinispan.Hotrod.Core</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
 <div class="ttc" id="anamespace_infinispan_1_1_hotrod_html"><div class="ttname"><a href="namespace_infinispan_1_1_hotrod.html">Infinispan.Hotrod</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
 <div class="ttc" id="anamespace_infinispan_html"><div class="ttname"><a href="namespace_infinispan.html">Infinispan</a></div><div class="ttdef"><b>Definition:</b> Cache.cs:9</div></div>
-</div><!-- fragment --> </div></div><!-- PageDoc -->
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md0"></a>
+Cluster configuration</h2>
+<p >The following are cluster wide settings. </p>
+<h3><a class="anchor" id="autotoc_md1"></a>
+Connection properties</h3>
+<ul>
+<li>enable disable TLS (<a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae855aaf69554a3c0f1e17a8cf89a3681" title="Enable TLS communication">InfinispanDG.UseTLS</a>). With or without server cert verification (<a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#a6fb93ee9ab66556bf0351f461454d852" title="Certification chain for server certificate verification. Leave it null for no verification.">InfinispanDG.CACert</a>).</li>
+<li>enable disable authentication providing user/password and the SASL mechanism (<a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae6d33bbe5c474b00fbbc8174b3631393" title="Username for the connection credentials">InfinispanDG.User</a>, <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ab0b6d792d6938bd569e38faeb5dc310a" title="Password for the connection credentials">InfinispanDG.Password</a>, <a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#a588a6c37ed489f885fae7293c3180da8" title="SASL authentication mechanism">InfinispanDG.AuthMech</a>). </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md2"></a>
+Cluster topology</h3>
+<ul>
+<li>add a node to the default cluster (<a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#ae188b34c84c6cff2d4ba6dbbcaf97db1" title="Add a cluster node to the initial list of nodes for the DEFAULT_CLUSTER.">InfinispanDG.AddHost(string, int)</a>).</li>
+<li>add a node to a specific cluster for failover configuration (<a class="el" href="class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html#a2f6efd755af30fad8d500ac04669be2b" title="Add a cluster node to the initial list of nodes for the specified cluster. If applied to the active c...">InfinispanDG.AddHost(string, string, int)</a>). </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

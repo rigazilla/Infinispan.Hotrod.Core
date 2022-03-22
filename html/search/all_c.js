@@ -1,20 +1,5 @@
 var searchData=
 [
-  ['readarraysession_0',['ReadArraySession',['../class_infinispan_1_1_hotrod_1_1_core_1_1_read_array_session.html',1,'Infinispan::Hotrod::Core']]],
-  ['remove_1',['REMOVE',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_m_o_v_e.html',1,'Infinispan::Hotrod::Core::Commands']]],
-  ['remove_2',['Remove',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#aaf2c1b350208a748ada89bb9723cb588',1,'Infinispan::Hotrod::Core::Cache']]],
-  ['remove_5fhits_3',['REMOVE_HITS',['../class_infinispan_1_1_hotrod_1_1_core_1_1_server_statistics.html#ae6233b1eee5f18c950852923b817c092',1,'Infinispan::Hotrod::Core::ServerStatistics']]],
-  ['remove_5fmisses_4',['REMOVE_MISSES',['../class_infinispan_1_1_hotrod_1_1_core_1_1_server_statistics.html#ab6daf8b34c61c6dae937e6c1f4df73f0',1,'Infinispan::Hotrod::Core::ServerStatistics']]],
-  ['removeclientlistener_5',['REMOVECLIENTLISTENER',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_m_o_v_e_c_l_i_e_n_t_l_i_s_t_e_n_e_r.html',1,'Infinispan::Hotrod::Core::Commands']]],
-  ['removelistener_6',['RemoveListener',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a119e06d7f52575eceabaddb8aa48591a',1,'Infinispan::Hotrod::Core::Cache']]],
-  ['removewithversion_7',['REMOVEWITHVERSION',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_m_o_v_e_w_i_t_h_v_e_r_s_i_o_n.html',1,'Infinispan::Hotrod::Core::Commands']]],
-  ['removewithversion_8',['RemoveWithVersion',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a67d934dfdfb40bb970d43b97d4a545ee',1,'Infinispan::Hotrod::Core::Cache']]],
-  ['replace_9',['REPLACE',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_p_l_a_c_e.html',1,'Infinispan::Hotrod::Core::Commands']]],
-  ['replace_10',['Replace',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a110c78597f05f697bf77a4ab768a50ba',1,'Infinispan::Hotrod::Core::Cache']]],
-  ['replacewithversion_11',['REPLACEWITHVERSION',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_p_l_a_c_e_w_i_t_h_v_e_r_s_i_o_n.html',1,'Infinispan::Hotrod::Core::Commands']]],
-  ['replacewithversion_12',['ReplaceWithVersion',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a872071339021eeb33a9312e83b1f41ef',1,'Infinispan::Hotrod::Core::Cache']]],
-  ['responsestream_13',['ResponseStream',['../class_infinispan_1_1_hotrod_1_1_core_1_1_response_stream.html',1,'Infinispan::Hotrod::Core']]],
-  ['result_14',['Result',['../class_infinispan_1_1_hotrod_1_1_core_1_1_result.html',1,'Infinispan::Hotrod::Core']]],
-  ['resultitem_15',['ResultItem',['../class_infinispan_1_1_hotrod_1_1_core_1_1_result_item.html',1,'Infinispan::Hotrod::Core']]],
-  ['retrievals_16',['RETRIEVALS',['../class_infinispan_1_1_hotrod_1_1_core_1_1_server_statistics.html#a14e6b8c7beac921403288fc92d225a06',1,'Infinispan::Hotrod::Core::ServerStatistics']]]
+  ['query_0',['QUERY',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_q_u_e_r_y.html',1,'Infinispan::Hotrod::Core::Commands']]],
+  ['query_1',['Query',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#abe642d8d58859078460cbcd9fefcb390',1,'Infinispan.Hotrod.Core.Cache.Query(QueryRequest query)'],['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a8432f9015cb23806d8a541c36b730e9c',1,'Infinispan.Hotrod.Core.Cache.Query(String query)']]]
 ];
