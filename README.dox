@@ -13,7 +13,7 @@ namespace Infinispan.Hotrod.Core {
  * 
  * 3. Create a cache
  * \snippet /Program.cs Create a cache
- * Cache is the main object to execute operation on remote cluster. To create a cache object a marshaller for both key and value must be provided. See Marshaller.
+ * A Cache object allows to execute operation on remote cluster. To create a cache object a marshaller for both key and value must be provided. See Marshaller.
  * 4. Write application code
  * \snippet /Program.cs Application code
  * 
