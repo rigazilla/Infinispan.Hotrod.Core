@@ -6,6 +6,7 @@ var searchData=
   ['codec_3',['Codec',['../class_infinispan_1_1_hotrod_1_1_core_1_1_codec.html',1,'Infinispan::Hotrod::Core']]],
   ['codec30_4',['Codec30',['../class_infinispan_1_1_hotrod_1_1_core_1_1_codec30.html',1,'Infinispan::Hotrod::Core']]],
   ['command_5',['Command',['../class_infinispan_1_1_hotrod_1_1_core_1_1_command.html',1,'Infinispan::Hotrod::Core']]],
-  ['commandwithkey_6',['CommandWithKey',['../class_infinispan_1_1_hotrod_1_1_core_1_1_command_with_key.html',1,'Infinispan::Hotrod::Core']]],
-  ['containskey_7',['CONTAINSKEY',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_c_o_n_t_a_i_n_s_k_e_y.html',1,'Infinispan::Hotrod::Core::Commands']]]
+  ['commandresult_6',['CommandResult',['../class_infinispan_1_1_hotrod_1_1_core_1_1_command_result.html',1,'Infinispan::Hotrod::Core']]],
+  ['commandwithkey_7',['CommandWithKey',['../class_infinispan_1_1_hotrod_1_1_core_1_1_command_with_key.html',1,'Infinispan::Hotrod::Core']]],
+  ['containskey_8',['CONTAINSKEY',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_c_o_n_t_a_i_n_s_k_e_y.html',1,'Infinispan::Hotrod::Core::Commands']]]
 ];

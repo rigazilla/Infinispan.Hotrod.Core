@@ -7,8 +7,7 @@ var searchData=
   ['infinispandg_4',['InfinispanDG',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_d_g.html',1,'Infinispan::Hotrod::Core']]],
   ['infinispanexception_5',['InfinispanException',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_exception.html',1,'Infinispan::Hotrod::Core']]],
   ['infinispanhost_6',['InfinispanHost',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_host.html',1,'Infinispan::Hotrod::Core']]],
-  ['infinispanoperationexception_7',['InfinispanOperationException',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_operation_exception.html',1,'Infinispan::Hotrod::Core']]],
-  ['infinispanrequest_8',['InfinispanRequest',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_request.html',1,'Infinispan::Hotrod::Core']]],
-  ['ipartresult_9',['IPartResult',['../interface_infinispan_1_1_hotrod_1_1_core_1_1_i_part_result.html',1,'Infinispan::Hotrod::Core']]],
-  ['ipartresult_3c_20idictionary_3c_20k_2c_20v_20_3e_20_3e_10',['IPartResult&lt; IDictionary&lt; K, V &gt; &gt;',['../interface_infinispan_1_1_hotrod_1_1_core_1_1_i_part_result.html',1,'Infinispan::Hotrod::Core']]]
+  ['infinispanrequest_7',['InfinispanRequest',['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_request.html',1,'Infinispan::Hotrod::Core']]],
+  ['ipartresult_8',['IPartResult',['../interface_infinispan_1_1_hotrod_1_1_core_1_1_i_part_result.html',1,'Infinispan::Hotrod::Core']]],
+  ['ipartresult_3c_20idictionary_3c_20k_2c_20v_20_3e_20_3e_9',['IPartResult&lt; IDictionary&lt; K, V &gt; &gt;',['../interface_infinispan_1_1_hotrod_1_1_core_1_1_i_part_result.html',1,'Infinispan::Hotrod::Core']]]
 ];

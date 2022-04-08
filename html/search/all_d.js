@@ -14,7 +14,7 @@ var searchData=
   ['replacewithversion_11',['REPLACEWITHVERSION',['../class_infinispan_1_1_hotrod_1_1_core_1_1_commands_1_1_r_e_p_l_a_c_e_w_i_t_h_v_e_r_s_i_o_n.html',1,'Infinispan::Hotrod::Core::Commands']]],
   ['replacewithversion_12',['ReplaceWithVersion',['../class_infinispan_1_1_hotrod_1_1_core_1_1_cache.html#a872071339021eeb33a9312e83b1f41ef',1,'Infinispan::Hotrod::Core::Cache']]],
   ['responsestream_13',['ResponseStream',['../class_infinispan_1_1_hotrod_1_1_core_1_1_response_stream.html',1,'Infinispan::Hotrod::Core']]],
-  ['result_14',['Result',['../class_infinispan_1_1_hotrod_1_1_core_1_1_result.html',1,'Infinispan::Hotrod::Core']]],
-  ['resultitem_15',['ResultItem',['../class_infinispan_1_1_hotrod_1_1_core_1_1_result_item.html',1,'Infinispan::Hotrod::Core']]],
+  ['result_14',['Result',['../class_infinispan_1_1_hotrod_1_1_core_1_1_result.html',1,'Infinispan.Hotrod.Core.Result'],['../class_infinispan_1_1_hotrod_1_1_core_1_1_infinispan_exception.html#a96d197fae90c064fc6d1afc5b8b268c1',1,'Infinispan.Hotrod.Core.InfinispanException.Result()']]],
+  ['results_15',['Results',['../class_infinispan_1_1_hotrod_1_1_core_1_1_command_result.html#a9d594a6b6832294b7df7b62d6a53a661',1,'Infinispan::Hotrod::Core::CommandResult']]],
   ['retrievals_16',['RETRIEVALS',['../class_infinispan_1_1_hotrod_1_1_core_1_1_server_statistics.html#a14e6b8c7beac921403288fc92d225a06',1,'Infinispan::Hotrod::Core::ServerStatistics']]]
 ];
