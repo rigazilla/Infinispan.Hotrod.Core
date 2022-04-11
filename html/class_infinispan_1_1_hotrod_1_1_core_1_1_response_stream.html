@@ -78,12 +78,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a105d86af6d9329f4a3334fe9f82f23df"><td class="memItemLeft" align="right" valign="top"><a id="a105d86af6d9329f4a3334fe9f82f23df" name="a105d86af6d9329f4a3334fe9f82f23df"></a>
-async Task&lt; byte[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReadAsync</b> (int size)</td></tr>
-<tr class="separator:a105d86af6d9329f4a3334fe9f82f23df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852bfdfc23b3e0c9a5774e6723c2f2e1"><td class="memItemLeft" align="right" valign="top"><a id="a852bfdfc23b3e0c9a5774e6723c2f2e1" name="a852bfdfc23b3e0c9a5774e6723c2f2e1"></a>
-async Task&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReadByteAsync</b> ()</td></tr>
-<tr class="separator:a852bfdfc23b3e0c9a5774e6723c2f2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02904ebd53a322d4d4126a12f715926c"><td class="memItemLeft" align="right" valign="top"><a id="a02904ebd53a322d4d4126a12f715926c" name="a02904ebd53a322d4d4126a12f715926c"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>ReadAsync</b> (int size)</td></tr>
+<tr class="separator:a02904ebd53a322d4d4126a12f715926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2128afd9695f3523fd9355ce1aaa2888"><td class="memItemLeft" align="right" valign="top"><a id="a2128afd9695f3523fd9355ce1aaa2888" name="a2128afd9695f3523fd9355ce1aaa2888"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadByteAsync</b> ()</td></tr>
+<tr class="separator:a2128afd9695f3523fd9355ce1aaa2888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6cbf4b22f23c9fc96d324ab0fef924"><td class="memItemLeft" align="right" valign="top"><a id="a7a6cbf4b22f23c9fc96d324ab0fef924" name="a7a6cbf4b22f23c9fc96d324ab0fef924"></a>
 byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>Read</b> (int size)</td></tr>
 <tr class="separator:a7a6cbf4b22f23c9fc96d324ab0fef924"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,9 +96,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6b1e7ec64a45d79579cfc60f0047c1d8"><td class="memItemLeft" align="right" valign="top"><a id="a6b1e7ec64a45d79579cfc60f0047c1d8" name="a6b1e7ec64a45d79579cfc60f0047c1d8"></a>
 CancellationTokenSource&#160;</td><td class="memItemRight" valign="bottom"><b>TokenSource</b> = new CancellationTokenSource()</td></tr>
 <tr class="separator:a6b1e7ec64a45d79579cfc60f0047c1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b1f33c1fdecd1887e81478dd7b6c40"><td class="memItemLeft" align="right" valign="top"><a id="a01b1f33c1fdecd1887e81478dd7b6c40" name="a01b1f33c1fdecd1887e81478dd7b6c40"></a>
-Channel&lt; ClientReceiveArgs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResponseChannel</b> = Channel.CreateUnbounded&lt;ClientReceiveArgs&gt;(opts)</td></tr>
-<tr class="separator:a01b1f33c1fdecd1887e81478dd7b6c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d918f8cebb2079df6c2c5aae9559f4b"><td class="memItemLeft" align="right" valign="top"><a id="a7d918f8cebb2079df6c2c5aae9559f4b" name="a7d918f8cebb2079df6c2c5aae9559f4b"></a>
+Channel&lt; PipeStream &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ResponseChannel</b> = Channel.CreateUnbounded&lt;PipeStream&gt;(opts)</td></tr>
+<tr class="separator:a7d918f8cebb2079df6c2c5aae9559f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/InfinispanRequest.cs</li>
